@@ -19,7 +19,11 @@ export default {
       { src: 'https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js' }
     ]
   },
-
+  generate: {
+    target: 'static',
+    ssr: true,
+    fallback: true
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -45,11 +49,6 @@ export default {
     '@nuxtjs/axios',
     'nuxt-sweetalert2'
   ],
-  generate: {
-    target: 'static',
-    ssr: true,
-    fallback: true
-  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
