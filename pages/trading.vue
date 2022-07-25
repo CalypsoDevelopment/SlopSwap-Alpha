@@ -6,17 +6,13 @@
     </div>
     <b-container fluid>
       <b-row>
-        <b-col sm="12" medium="12" lg="2" class="text-center">
-
-        </b-col>
+        <b-col sm="12" medium="12" lg="2" class="text-center" />
         <b-col sm="12" medium="12" lg="8" class="text-center">
           <div class="app-container">
             <SlopSwapTraderV2 />
           </div>
         </b-col>
-        <b-col sm="12" medium="12" lg="2" class="text-center">
-
-        </b-col>
+        <b-col sm="12" medium="12" lg="2" class="text-center" />
       </b-row>
     </b-container>
   </b-container>

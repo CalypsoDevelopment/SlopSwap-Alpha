@@ -7,22 +7,19 @@
         <div>
           <b-nav class="config-btns">
             <b-nav-item active>
-              <b-button v-b-toggle.TXSettingsConfig pill>
+              <!--<b-button v-b-toggle.TXSettingsConfig pill>
                 <i class="fa-solid fa-gears" style="color: #3E3D40;" />
-              </b-button>
-              <SlopSwapTradeConfiguration />
+              </b-button>-->
             </b-nav-item>
             <b-nav-item>
               <b-button v-b-toggle.TXHistory pill>
                 <i class="fa-solid fa-clock-rotate-left" style="color: #3E3D40;" />
               </b-button>
-              <SlopSwapTXHistory />
             </b-nav-item>
             <b-nav-item>
               <b-button v-b-toggle.TradingPairGraph pill>
                 <i class="fa-solid fa-chart-area" style="color: #3E3D40;" />
               </b-button>
-              <SlopSwapPairGraphSidebar />
             </b-nav-item>
             <b-nav-item>
               <b-form-select v-model="SlippageSelected" class="slippage-selector slippage-title" :options="SlippageOptions" />
@@ -104,7 +101,7 @@
 import SlopSwapMakerTokenSelect from '~/components/SlopSwapMakerTokenSelect.vue'
 import SlopSwapTakerTokenSelect from '~/components/SlopSwapTakerTokenSelect.vue'
 import SlopSwapTXReceiptSidebar from '~/components/SlopSwapTXReceiptSidebar.vue'
-import SlopSwapTradeConfiguration from '~/components/SlopSwapTradeConfiguration.vue'
+// import SlopSwapTradeConfiguration from '~/components/SlopSwapTradeConfiguration.vue'
 const axios = require('axios')
 const ethers = require('ethers')
 const qs = require('qs')
@@ -122,7 +119,7 @@ const BEP20 = require('~/static/artifacts/IERC20.json')
 
 export default {
   name: 'SlopSwapTraderV2',
-  components: { SlopSwapMakerTokenSelect, SlopSwapTakerTokenSelect, SlopSwapTXReceiptSidebar, SlopSwapTradeConfiguration },
+  components: { SlopSwapMakerTokenSelect, SlopSwapTakerTokenSelect, SlopSwapTXReceiptSidebar },
   data () {
     return {
       MainnetFactory: '0x0533B75362E3Be13E78f245e50674c9a6dd9c17A',

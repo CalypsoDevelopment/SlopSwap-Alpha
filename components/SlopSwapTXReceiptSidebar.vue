@@ -44,6 +44,7 @@ export default {
   },
   props: {
     txreceipt: {
+      default: null,
       type: Object,
       required: false
     }

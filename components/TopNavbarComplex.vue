@@ -35,7 +35,7 @@
             <b-dropdown-item href="/kenouserinterface">
               SlopSwap Keno
             </b-dropdown-item>-->
-            <!--<b-dropdown-item href="#">
+          <!--<b-dropdown-item href="#">
               Game3
             </b-dropdown-item>
             <b-dropdown-item href="#">
@@ -49,7 +49,7 @@
             <b-dropdown-item href="/CryptocurrencyTerms">
               Crypto Dictionary Terms
             </b-dropdown-item>-->
-            <!--<b-dropdown-item href="/">
+          <!--<b-dropdown-item href="/">
               CryptoWiki
             </b-dropdown-item>
             <b-dropdown-item href="/">

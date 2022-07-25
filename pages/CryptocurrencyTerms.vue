@@ -8,7 +8,7 @@
     <b-container>
       <b-row>
         <b-col sm="12" medium="8" lg="8" class="my-5 crypto-logo-container">
-          <div v-for="item in CryptoTerms" class="term-container" :key="item.Title">
+          <div v-for="item in CryptoTerms" :key="item.Title" class="term-container">
             <h1 class="main-title">
               {{ item.Title }}
             </h1>
@@ -19,9 +19,7 @@
             </div>
           </div>
         </b-col>
-        <b-col sm="12" medium="4" lg="4" class="my-2">
-
-        </b-col>
+        <b-col sm="12" medium="4" lg="4" class="my-2" />
       </b-row>
     </b-container>
   </b-container>
